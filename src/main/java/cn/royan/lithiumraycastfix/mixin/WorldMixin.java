@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
 
-@Mixin(value = World.class, priority = 2147483647)
+@Mixin(value = World.class, priority = 2147483647) //:)
 public abstract class WorldMixin implements HeightLimitView {
     private static final BlockState OUTSIDE_WORLD_BLOCK = Blocks.VOID_AIR.getDefaultState();
     private static final BlockState INSIDE_WORLD_DEFAULT_BLOCK = Blocks.AIR.getDefaultState();
