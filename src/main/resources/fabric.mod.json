@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "lithium-raycast-fix",
+	"version": "${version}",
+	"name": "Lithium Raycast Fix",
+	"description": "A mod to fix Lithium.",
+	"authors": [
+		"AB",
+		"lovexyn"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/lithium-raycast-fix/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cn.royan.lithiumraycastfix.LithiumRaycastFix"
+		]
+	},
+	"mixins": [
+		"lithium-raycast-fix.mixins.json"
+	],
+	"custom": {
+		"modmenu": {
+			"parent": {
+				"id": "lithium"
+			}
+		}
+	},
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"lithium": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
